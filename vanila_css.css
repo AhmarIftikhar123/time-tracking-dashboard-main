@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Epilogue&family=Hanken+Grotesk:wght@200&family=Inter:wght@200&family=Josefin+Sans:wght@200;300&family=Kumbh+Sans:wght@300;400&family=League+Spartan&family=Lexend+Deca:wght@300;400&family=Libre+Franklin:wght@200&family=Manrope:wght@200&family=Open+Sans&family=Outfit:wght@200&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200;300&family=Red+Hat+Display&family=Rubik:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  
+}
+.grid_item::before{
+    background-size: 3.5rem;
+    background-position: 95% 50%; 
+    z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .container{
+        width: 750px;
+        height: 310px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1440px){
+    .container{
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+        'grid_item_user work play study'
+        'grid_item_user exercise social self_care';
+    }
+    .grid_item_user{
+        grid-area: grid_item_user;
+    }
+}
+
+.car{
+    
+element {
+    flex-direction: column;
+  
+    justify-content: flex-start;
+  
+    align-items: flex-start;
+  
+    margin-top: .5rem;
+  
+  
+  }
+}
+
+:root{
+    --Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+--Blue: hsl(246, 80%, 60%);
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self-care: hsl(43, 84%, 65%);
+}
+

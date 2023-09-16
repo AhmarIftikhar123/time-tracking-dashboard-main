@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="tailwind_css.css" />
+
+    <link rel="stylesheet" href="vanila_css.css" />
+  </head>
+  <body
+    class="font-Rubik bg-body_bg user_info flex flex-col justify-center items-center min-h-screen"
+  >
+    <main class="container p-4 flex flex-col gap-3">
+      <!-- User information -->
+
+      <div
+        class="grid_item_user w-full flex flex-col bg-grid_item_bg overflow-hidden rounded-b-lg"
+      >
+        <!-- upper_side -->
+
+        <div
+          class="user_card bg-User_bg flex items-center p-3 rounded-lg md:flex-col md:items-start md:h-[70%] md:gap-4 md:py-4"
+        >
+          <!-- user_img` -->
+
+          <div class="user_img w-10 md:w-14 border-2 border-white rounded-full">
+            <img src="images/image-jeremy.png" alt="user_img" class="w-full" />
+          </div>
+
+          <div class="user_data ml-4 md:ml-0">
+            <p class="text-xs text-Pale_text">Report for</p>
+
+            <big
+              class="text-Pale_text text-[15px] font-semibold md:text-2xl md:font-medium"
+              >Jeremy <span class="md:block">Robson</span></big
+            >
+          </div>
+        </div>
+        <div class="lower_side py-3">
+          <ul
+            class="flex items-center justify-around md:flex-col md:items-start md:gap-2 md:ml-4"
+          >
+            <li
+              class="text-xs text-Desaturated_blue cursor-pointer hover:text-Pale_text md:font-semibold"
+            >
+              Daily
+            </li>
+            <li
+              class="text-xs text-Desaturated_blue cursor-pointer hover:text-Pale_text md:font-semibold"
+            >
+              Weekly
+            </li>
+            <li
+              class="text-xs text-Desaturated_blue cursor-pointer hover:text-Pale_text md:font-semibold"
+            >
+              Monthly
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Work -->
+
+      <div
+        class="grid_item work rounded-t-lg overflow-hidden relative before:content-[''] before:absolute before:top-0 before:right-0 before:bg-work_img before:bg-work_bg before:w-full before:h-[35%] before:bg-[54px] before:bg-no-repeat lg:before:h-[30%]"
+      >
+        <div
+          class="card_container bg-grid_item_bg p-4 mt-6 rounded-2xl hover_affect transition"
+        >
+          <div class="card_data flex justify-between items-center">
+            <p
+              class="text-white font-semibold text-xs md:text-sm lg:text-sm xl:text-base"
+            >
+              Work
+            </p>
+
+            <div class="img_block w-4 cursor-pointer hover:w-5">
+              <img src="images/icon-ellipsis.svg" alt="" class="w-full" />
+            </div>
+          </div>
+          <div
+            class="card_time flex items-center justify-between md:flex-col md:items-start md:justify-start md:mt-1 md:gap-1 lg:flex-col lg:items-start lg:justify-start lg:mt-1 lg:gap-1 xl:flex-col xl:items-start xl:justify-start xl:mt-2 xl:gap-1"
+          >
+            <big
+              class="text-lg text-white font-extralight md:text-2xl md:ml-1 lg:text-2xl lg:ml-1 xl:text-3xl xl:ml-2"
+              >32hrs</big
+            >
+
+            <small
+              class="text-Pale_text font-semibold text-[11px] md:text-xs lg:text-sm xl:text-base"
+              >last Weed - 36hrs</small
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Play -->
+
+      <div
+        class="grid_item play rounded-t-lg overflow-hidden relative before:content-[''] before:absolute before:top-0 before:right-0 before:bg-play_img before:bg-play_bg before:w-full before:h-[35%] before:bg-[54px] before:bg-no-repeat lg:before:h-[30%]"
+      >
+        <div
+          class="card_container bg-grid_item_bg p-4 mt-6 rounded-2xl hover_affect transition"
+        >
+          <div class="card_data flex justify-between items-center">
+            <p
+              class="text-white font-semibold text-xs md:text-sm lg:text-sm xl:text-base"
+            >
+              Play
+            </p>
+
+            <div class="img_block w-4 cursor-pointer hover:w-5">
+              <img src="images/icon-ellipsis.svg" alt="" class="w-full" />
+            </div>
+          </div>
+          <div
+            class="card_time flex items-center justify-between md:flex-col md:items-start md:justify-start md:mt-1 md:gap-1 lg:flex-col lg:items-start lg:justify-start lg:mt-1 lg:gap-1 xl:flex-col xl:items-start xl:justify-start xl:mt-2 xl:gap-1"
+          >
+            <big
+              class="text-lg text-white font-extralight md:text-2xl md:ml-1 lg:text-2xl lg:ml-1 xl:text-3xl xl:ml-2"
+              >10hrs</big
+            >
+
+            <small
+              class="text-Pale_text font-semibold text-[11px] md:text-xs lg:text-sm xl:text-base"
+              >last Weed - 7hrs</small
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Study -->
+
+      <div
+        class="grid_item study rounded-t-lg overflow-hidden relative before:content-[''] before:absolute before:top-0 before:right-0 before:bg-study_img before:bg-study_bg before:w-full before:h-[35%] before:bg-[54px] before:bg-no-repeat lg:before:h-[30%]"
+      >
+        <div
+          class="card_container bg-grid_item_bg p-4 mt-6 rounded-2xl hover_affect transition"
+        >
+          <div class="card_data flex justify-between items-center">
+            <p
+              class="text-white font-semibold text-xs md:text-sm lg:text-sm xl:text-base"
+            >
+              Study
+            </p>
+
+            <div class="img_block w-4 cursor-pointer hover:w-5">
+              <img src="images/icon-ellipsis.svg" alt="" class="w-full" />
+            </div>
+          </div>
+          <div
+            class="card_time flex items-center justify-between md:flex-col md:items-start md:justify-start md:mt-1 md:gap-1 lg:flex-col lg:items-start lg:justify-start lg:mt-1 lg:gap-1 xl:flex-col xl:items-start xl:justify-start xl:mt-2 xl:gap-1"
+          >
+            <big
+              class="text-lg text-white font-extralight md:text-2xl md:ml-1 lg:text-2xl lg:ml-1 xl:text-3xl xl:ml-2"
+              >4hrs</big
+            >
+
+            <small
+              class="text-Pale_text font-semibold text-[11px] md:text-xs lg:text-sm xl:text-base"
+              >last Weed - 7hrs</small
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Exercise -->
+
+      <div
+        class="grid_item exercise rounded-t-lg overflow-hidden relative before:content-[''] before:absolute before:top-0 before:right-0 before:bg-exercise_bg before:bg-exercise_img before:w-full before:h-[35%] before:bg-[54px] before:bg-no-repeat lg:before:h-[30%]"
+      >
+        <div
+          class="card_container bg-grid_item_bg p-4 mt-6 rounded-2xl hover_affect transition"
+        >
+          <div class="card_data flex justify-between items-center">
+            <p
+              class="text-white font-semibold text-xs md:text-sm lg:text-sm xl:text-base"
+            >
+              Exercise
+            </p>
+
+            <div class="img_block w-4 cursor-pointer hover:w-5">
+              <img src="images/icon-ellipsis.svg" alt="" class="w-full" />
+            </div>
+          </div>
+          <div
+            class="card_time flex items-center justify-between md:flex-col md:items-start md:justify-start md:mt-1 md:gap-1 lg:flex-col lg:items-start lg:justify-start lg:mt-1 lg:gap-1 xl:flex-col xl:items-start xl:justify-start xl:mt-2 xl:gap-1"
+          >
+            <big
+              class="text-lg text-white font-extralight md:text-2xl md:ml-1 lg:text-2xl lg:ml-1 xl:text-3xl xl:ml-2"
+              >4hrs</big
+            >
+
+            <small
+              class="text-Pale_text font-semibold text-[11px] md:text-xs lg:text-sm xl:text-base"
+              >last Weed - 5hrs</small
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Social -->
+
+      <div
+        class="grid_item social rounded-t-lg overflow-hidden relative before:content-[''] before:absolute before:top-0 before:right-0 before:bg-social_bg before:bg-social_img before:w-full before:h-[35%] before:bg-[54px] before:bg-no-repeat lg:before:h-[30%]"
+      >
+        <div
+          class="card_container bg-grid_item_bg p-4 mt-6 rounded-2xl hover_affect transition"
+        >
+          <div class="card_data flex justify-between items-center">
+            <p
+              class="text-white font-semibold text-xs md:text-sm lg:text-sm xl:text-base"
+            >
+              Social
+            </p>
+
+            <div class="img_block w-4 cursor-pointer hover:w-5">
+              <img src="images/icon-ellipsis.svg" alt="" class="w-full" />
+            </div>
+          </div>
+          <div
+            class="card_time flex items-center justify-between md:flex-col md:items-start md:justify-start md:mt-1 md:gap-1 lg:flex-col lg:items-start lg:justify-start lg:mt-1 lg:gap-1 xl:flex-col xl:items-start xl:justify-start xl:mt-2 xl:gap-1"
+          >
+            <big
+              class="text-lg text-white font-extralight md:text-2xl md:ml-1 lg:text-2xl lg:ml-1 xl:text-3xl xl:ml-2"
+              >5hrs</big
+            >
+
+            <small
+              class="text-Pale_text font-semibold text-[11px] md:text-xs lg:text-sm xl:text-base"
+              >last Weed - 10hrs</small
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Self_care       -->
+
+      <div
+        class="grid_item self_care rounded-t-lg overflow-hidden relative before:content-[''] before:absolute before:top-0 before:right-0 before:bg-selfcare_bg before:bg-self_car_img before:w-full before:h-[35%] before:bg-[54px] before:bg-no-repeat lg:before:h-[30%]"
+      >
+        <div
+          class="card_container bg-grid_item_bg p-4 mt-6 rounded-2xl hover_affect transition"
+        >
+          <div class="card_data flex justify-between items-center">
+            <p
+              class="text-white font-semibold text-xs md:text-sm lg:text-sm xl:text-base"
+            >
+              Self Care
+            </p>
+
+            <div class="img_block w-4 cursor-pointer hover:w-5 transition">
+              <img src="images/icon-ellipsis.svg" alt="" class="w-full" />
+            </div>
+          </div>
+          <div
+            class="card_time flex items-center justify-between md:flex-col md:items-start md:justify-start md:mt-1 md:gap-1 lg:flex-col lg:items-start lg:justify-start lg:mt-1 lg:gap-1 xl:flex-col xl:items-start xl:justify-start xl:mt-2 xl:gap-1"
+          >
+            <big
+              class="text-lg text-white font-extralight md:text-2xl md:ml-1 lg:text-2xl lg:ml-1 xl:text-3xl xl:ml-2"
+              >2hrs</big
+            >
+
+            <small
+              class="text-Pale_text font-semibold text-[11px] md:text-xs lg:text-sm xl:text-base"
+              >last Weed - 2hrs</small
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
